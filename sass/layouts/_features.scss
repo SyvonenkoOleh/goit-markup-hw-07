@@ -1,0 +1,30 @@
+  .features {
+    display: flex;
+    gap: 30px;
+
+    &__title {
+      margin-bottom: 10px;
+    
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.1428;
+      text-transform: uppercase;
+    }
+    &__item {
+      width: 270px;
+    }
+    &__text {
+      line-height: 1.7142;
+      color: var(--primary-text-color);
+    }
+    &__icon {
+      display: inline-flex;
+      margin-bottom: 30px;
+      width: 270px;
+      height: 120px;
+      background: #f5f4fa;
+      border-radius: 4px;
+      align-items: center;
+      justify-content: center;
+    }
+  }

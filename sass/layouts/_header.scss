@@ -1,0 +1,104 @@
+  header {
+    border-bottom: 1px solid #ececec;
+  }
+  .header__item {
+    display: flex;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  .navigation__logo {
+    margin-right: 93px;
+  }
+
+  .logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--primary-hover-color);
+    &__text {
+      color: #000000;
+    }
+  }
+
+  .menu {
+    display: flex;
+    gap: 50px;
+
+    &__item {
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+            
+      font-weight: 500;
+      line-height: 1.1428;
+      letter-spacing: 0.02em;
+    
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+      &:hover,
+      &:focus {
+        color: var(--primary-hover-color);
+      }
+    }
+    &__item--blue {
+      color: var(--primary-hover-color);
+      position: relative;
+  
+      &::after {
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        bottom: -1px;
+        content: '';
+        background-color: var(--primary-hover-color);
+        display: block;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  .contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    gap: 50px;
+    &__list {
+      display: flex;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      align-items: center;
+      font-weight: 500;
+      line-height: 1.1428;
+      letter-spacing: 0.02em;
+      color: var(--primary-text-color);
+    
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+      &:hover,
+      &:focus {
+        color: var(--primary-hover-color);
+      }
+    }
+    &__icon {
+      margin-right: 10px;
+      flex-direction: row-reverse;
+    
+      fill: var(--primary-text-color);
+    
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      .contacts__list:hover &,
+      .contacts__list:focus & { 
+        fill: var(--primary-hover-color);
+      }
+    }
+  }
+

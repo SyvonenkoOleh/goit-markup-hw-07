@@ -1,0 +1,30 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--title-text-color);
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  background: #ffffff;
+}
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1666;
+  text-align: center;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.display-flex {
+    display: flex;
+}
